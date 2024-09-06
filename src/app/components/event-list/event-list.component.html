@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let event of events">
+    {{ event.name }} - {{ event.date }} - {{ event.location }}
+    <button (click)="onDeleteEvent(event.id)">Delete</button>
+  </li>
+</ul>

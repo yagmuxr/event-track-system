@@ -1,0 +1,12 @@
+<form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+  <label for="name">Event Name</label>
+  <input id="name" formControlName="name" type="text">
+
+  <label for="date">Event Date</label>
+  <input id="date" formControlName="date" type="date">
+
+  <label for="location">Event Location</label>
+  <input id="location" formControlName="location" type="text">
+
+  <button type="submit">+ Save Event</button>
+</form>
